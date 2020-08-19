@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html>
+<head>
+	<title></title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="{%static "css/snews.css" %}">
+</head>
+<body>
+<h1>Sthita Movie news information</h1>
+
+<ul>
+<li>{{news1 | upper}}</li>
+<li>{{news2 | lower}}</li>
+<li>{{news3 | title}}</li>
+<li>{{news4}}</li>
+<li>{{news5}}</li>
+</ul>
+<img src="{%static "images/sunny.jpg"%}" >
+<img src="{%static "images/tiger.jpeg"%}" >
+<img src="{%static "images/sunny.jpg"%}" >
+<img src="{%static "images/sunny.jpg"%}" >
+<img src="{%static "images/sunny.jpg"%}" >
+<img src="{%static "images/sunny.jpg"%}" >
+<img src="{%static "images/sunny.jpg"%}" >
+<img src="{%static "images/sunny.jpg"%}" >
+</body>
+</html>
