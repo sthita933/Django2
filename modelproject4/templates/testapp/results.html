@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bgcolor="red">
+<h1>VOTE INFORMATION</h1>
+{% if var %}
+<table border=3>
+	<thead>
+		<th>voter no</th>
+		<th>voter name</th>
+		<th>voter address</th>
+		<th>voter age</th>
+		<th>voter party</th>
+	</thead>
+ {% for v in var%}
+ <tr>
+ 	
+<td>{{v.vno}}</td>
+<td>{{v.vname}}</td>
+<td>{{v.vaddr}}</td>
+<td>{{v.vage}}</td>
+<td>{{v.vparty}}</td>
+
+ </tr>
+
+ {% endfor %}
+</table>
+{%else%}
+<h3>sorry no record found</h3>
+{%endif%}
+</body>
+</html>
+
+
